@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+int main ()
+{
+    int n,i,*p;
+    printf("enter total number value");
+    scanf("%d",&n);
+    p=(int*)malloc(n*sizeof(int));
+   // printf("enter the value : ");
+    printf("addres %d",p);
+    for(i=0;i<n;i++)
+    {
+        printf("enter the value : ");
+        scanf("%d",p+i);
+
+    }
+    for(i=0;i<n;i++)
+    {
+        printf("value :%d",*(p+i));
+    }
+    free(p);
+
+
+    return 0;
+}
