@@ -1,16 +1,15 @@
-#include<stdio.h>
-
-	int factorial(int n)
-	{
-		int i,fact=1;
-		for(i=1;i<=n;i++)
-		fact=fact*i;
-	
-	return fact;
-}
+#include<iostream>
+using namespace std;
 int main()
 {
-	int n;
-	scanf("%d",&n);
-	printf("THE FACTORIAL ::%d",factorial(n));
+    int i,n;
+    cin>>n;
+    int fact=1;
+    for(i=1;i<=n;i++)
+    {
+
+        fact=fact*i;
+    }
+    cout<<fact<<endl;
+    return 0;
 }
